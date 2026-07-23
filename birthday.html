@@ -210,6 +210,25 @@
     display: none;
   }
   footer.show { display: block; }
+
+  #make-yours {
+    position: fixed; right: 18px; bottom: 18px; z-index: 60;
+    background: #ffffff1a;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid #ffffff2e;
+    border-radius: 999px;
+    padding: 10px 18px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px; font-weight: 600;
+    opacity: 0;
+    transform: translateY(14px);
+    pointer-events: none;
+    transition: opacity .6s ease, transform .6s ease, background .2s;
+  }
+  #make-yours.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  #make-yours:hover { background: #ffffff2e; }
 </style>
 </head>
 <body data-theme="night">
@@ -243,6 +262,7 @@
 </section>
 
 <footer id="footer"></footer>
+<a id="make-yours" href="index.html" title="Create a birthday surprise for someone you love">✨ Make yours</a>
 
 <script>
   /* ---------- data ---------- */
@@ -468,6 +488,8 @@
     setTimeout(() => burst(100, cv.width * .8), 900);
     setTimeout(() => burst(80, cv.width * .8), 2000);
     releaseBalloons();
+    // once the celebration has fully played out, invite her to make her own
+    setTimeout(() => document.getElementById('make-yours').classList.add('show'), 6500);
   }
 </script>
 </body>
