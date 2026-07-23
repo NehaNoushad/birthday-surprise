@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A surprise for you 🎂</title>
+<title>PSY 2040 — Course Syllabus (Fall 2026)</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root {
@@ -229,9 +229,113 @@
   }
   #make-yours.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
   #make-yours:hover { background: #ffffff2e; }
+
+  /* ---------- syllabus disguise ---------- */
+  #disguise {
+    position: fixed; inset: 0; z-index: 100;
+    background: #f7f6f2; color: #26241f;
+    overflow-y: auto;
+    font-family: Georgia, "Times New Roman", serif;
+    cursor: default;
+  }
+  .syl-wrap { max-width: 780px; margin: 0 auto; padding: 44px 26px 90px; }
+  .syl-dept { font-size: 13px; letter-spacing: 2px; text-transform: uppercase; color: #6b6759; }
+  .syl-wrap h1 {
+    font-size: 27px; font-weight: 700; color: #1f2f4a;
+    margin: 8px 0 2px; line-height: 1.3;
+    background: none; -webkit-text-fill-color: currentColor;
+  }
+  .syl-sub { font-size: 15px; color: #55503f; font-style: italic; margin-bottom: 22px; }
+  .syl-wrap hr { border: none; border-top: 2px solid #1f2f4a; margin: 14px 0 24px; }
+  .syl-wrap h2 {
+    font-size: 17px; color: #1f2f4a; margin: 28px 0 10px;
+    border-bottom: 1px solid #d8d4c6; padding-bottom: 5px;
+  }
+  .syl-wrap p, .syl-wrap li { font-size: 15px; line-height: 1.7; color: #35322a; }
+  .syl-wrap ul { padding-left: 22px; }
+  .syl-wrap table {
+    width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 8px;
+  }
+  .syl-wrap th, .syl-wrap td {
+    border: 1px solid #d8d4c6; padding: 8px 12px; text-align: left; color: #35322a;
+  }
+  .syl-wrap th { background: #ecebe3; font-weight: 700; }
+  .syl-wrap tr:nth-child(even) td { background: #f1f0ea; }
+  .syl-btn {
+    display: inline-block; margin-top: 30px;
+    background: #1f2f4a; color: #fff;
+    font-family: inherit; font-size: 15px;
+    padding: 11px 22px; border: none; border-radius: 4px; cursor: pointer;
+  }
+  .syl-btn:hover { background: #2c4269; }
+  .syl-footer { margin-top: 44px; font-size: 12.5px; color: #8a8574; border-top: 1px solid #d8d4c6; padding-top: 14px; }
+
+  #disguise.glitch { animation: glitch-out 1.1s steps(1) forwards; }
+  @keyframes glitch-out {
+    0%   { transform: translate(0); filter: none; }
+    10%  { transform: translate(-8px, 3px); filter: invert(1) hue-rotate(90deg); }
+    20%  { transform: translate(6px, -4px) skewX(-4deg); filter: none; }
+    30%  { transform: translate(-5px, 0); filter: invert(1); }
+    40%  { transform: translate(0) scale(1.01); filter: hue-rotate(220deg) saturate(3); }
+    55%  { transform: translate(7px, 2px) skewX(3deg); filter: invert(1) contrast(2); }
+    70%  { transform: translate(0); filter: none; opacity: 1; }
+    100% { transform: scale(1.06); filter: blur(14px); opacity: 0; }
+  }
 </style>
 </head>
 <body data-theme="night">
+<div id="disguise">
+  <div class="syl-wrap">
+    <div class="syl-dept">Department of Psychology</div>
+    <h1>PSY 2040: Introduction to Cognitive Psychology</h1>
+    <div class="syl-sub">Course Syllabus — Fall Semester 2026 · Section 03 · 3 Credit Hours</div>
+    <hr>
+
+    <h2>Course Description</h2>
+    <p>This course provides a comprehensive survey of human cognition, including perception,
+    attention, memory systems, language processing, problem solving, and decision making.
+    Emphasis is placed on classic experimental findings as well as contemporary research
+    methodologies. Students will engage with primary literature and complete a small-scale
+    replication project.</p>
+
+    <h2>Learning Objectives</h2>
+    <ul>
+      <li>Describe the major theoretical frameworks in cognitive psychology.</li>
+      <li>Evaluate empirical evidence concerning attention and working memory.</li>
+      <li>Design and critique basic cognitive experiments.</li>
+      <li>Apply cognitive principles to everyday contexts such as studying and decision making.</li>
+    </ul>
+
+    <h2>Grading</h2>
+    <table>
+      <tr><th>Component</th><th>Weight</th></tr>
+      <tr><td>Midterm Examination I</td><td>20%</td></tr>
+      <tr><td>Midterm Examination II</td><td>20%</td></tr>
+      <tr><td>Replication Project &amp; Report</td><td>25%</td></tr>
+      <tr><td>Weekly Response Papers</td><td>15%</td></tr>
+      <tr><td>Final Examination (cumulative)</td><td>20%</td></tr>
+    </table>
+
+    <h2>Weekly Schedule (Weeks 1–6)</h2>
+    <table>
+      <tr><th>Week</th><th>Topic</th><th>Reading</th></tr>
+      <tr><td>1</td><td>History &amp; Methods of Cognitive Psychology</td><td>Ch. 1</td></tr>
+      <tr><td>2</td><td>Perception and Pattern Recognition</td><td>Ch. 2–3</td></tr>
+      <tr><td>3</td><td>Attention and Automaticity</td><td>Ch. 4</td></tr>
+      <tr><td>4</td><td>Sensory &amp; Working Memory</td><td>Ch. 5</td></tr>
+      <tr><td>5</td><td>Long-Term Memory: Encoding &amp; Retrieval</td><td>Ch. 6–7</td></tr>
+      <tr><td>6</td><td>Memory Errors — <em>why we forget what matters most…</em></td><td>Ch. 8</td></tr>
+    </table>
+
+    <button class="syl-btn" id="syl-more">View full schedule &amp; course policies →</button>
+
+    <div class="syl-footer">
+      Office hours by appointment. Please consult the learning management system for
+      announcements, submission portals, and updates to this document.
+    </div>
+  </div>
+</div>
+
 <canvas id="stars"></canvas>
 <canvas id="confetti"></canvas>
 
@@ -283,7 +387,7 @@
     theme: 'night'
   };
   document.body.dataset.theme = data.theme || 'night';
-  document.title = `A surprise for ${data.to} 🎂`;
+  // keep the boring syllabus title until the disguise is dropped
 
   /* ---------- starfield ---------- */
   const starsCv = document.getElementById('stars');
@@ -337,7 +441,22 @@
     }
     typeLine(lines[idx], () => playLines(idx + 1));
   }
-  playLines(0);
+
+  /* ---------- drop the syllabus disguise ---------- */
+  const disguise = document.getElementById('disguise');
+  let revealed = false;
+  function dropDisguise() {
+    if (revealed) return;
+    revealed = true;
+    disguise.classList.add('glitch');
+    setTimeout(() => {
+      disguise.remove();
+      document.title = `A surprise for ${data.to} 🎂`;
+      playLines(0);
+    }, 1100);
+  }
+  // any click anywhere on the "syllabus" springs the trap
+  disguise.addEventListener('click', dropDisguise);
 
   /* ---------- little melody (Web Audio, no files needed) ---------- */
   function playMelody() {

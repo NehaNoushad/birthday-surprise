@@ -5,7 +5,8 @@ A tiny two-page static site for sending someone a birthday surprise.
 - **`index.html`** — the builder. Fill in the birthday person's name, your message,
   and little wishes, pick a theme, and it generates a shareable "magic link".
   All the data is encoded into the link itself — no server or database.
-- **`birthday.html`** — the surprise. Typewriter intro, a cake with candles to
+- **`syllabus.html`** — the surprise, disguised as a boring college syllabus.
+  One click and it glitches into: typewriter intro, a cake with candles to
   blow out, a Happy Birthday melody (Web Audio), confetti, balloons, and the
   message + wishes revealed as cards.
 
