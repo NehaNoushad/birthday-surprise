@@ -165,7 +165,7 @@
       <button class="btn btn-ghost" id="copy">📋 Copy link</button>
       <button class="btn btn-ghost" id="preview">👀 Preview the surprise</button>
     </div>
-    <p class="hint">🥸 The link is disguised: it opens as a boring college syllabus ("PSY 2040 — Course Syllabus"), and the moment she clicks anything, it glitches into her surprise. Send it with something like "hey, is this the right syllabus?" — and tell her to have sound on. 🔊</p>
+    <p class="hint">🥸 The link is disguised: it opens as a boring B.Tech CSE semester syllabus, and the moment she clicks anything, it glitches into her surprise. Send it with something like "hey, is this the updated sem 5 syllabus?" — and tell her to have sound on. 🔊</p>
   </div>
 </div>
 
@@ -218,7 +218,7 @@
       theme
     };
     // the surprise page masquerades as a course syllabus, so the link looks boring
-    const DISGUISE_HOST = 'psy2040-syllabus.vercel.app';
+    const DISGUISE_HOST = 'btech-cse-syllabus.vercel.app';
     const url = new URL('syllabus.html', location.href);
     if (url.hostname.endsWith('.vercel.app')) url.host = DISGUISE_HOST;
     url.hash = encodeData(data);
